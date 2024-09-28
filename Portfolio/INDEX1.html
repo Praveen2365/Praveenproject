@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'poppins',sans-serif;
+        }
+        #services{
+     color: #fff;
+     font-size: 20px;
+     line-height: 1.4;
+     margin-bottom: 4rem;
+}
+.sub-title{
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+}
+.sub-title span{
+    color: #0ef;
+}
+.container{
+    padding: 90px;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div{
+    background-color: transparent;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 13px;
+    border-right: 10px;
+    border-radius: 20px;
+    transition: background 0.5s,transform 0.5s;
+    box-shadow: 1px 1px 20px #012290f7,
+            1px 1px 40px #012290f7;
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2{
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+
+}
+.read{
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 10px;
+    color: #0e3753;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-weight: 600;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef,
+            0 0 25px #0ef;
+}
+.read:hover{
+    color: white;
+}
+.services-list div:hover{
+    transform: translateY(-10px);
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="services" id="myproject">
+            <div class="container">
+                <h1 class="sub-title">My<span>Project</span></h1>
+                <div class="services-list">
+                    <div>
+                        <i class='bx bxs-music' style='color:#2dd1cc'></i>
+                        <h2>Music website</h2>
+                        <P>I'm building a music website using HTML, CSS, JavaScript, and React. The site will feature playlists, music streaming, and user profiles, creating an engaging experience for music lovers everywhere.</P>
+                        <a href="#" class="read">Code</a>
+                    </div>
+                    <div>
+                        <i class='bx bx-ghost' style='color:#2dd1cc'></i>
+                        <h2>Snake Game</h2>
+                        <P>I'm creating a classic Snake game using HTML, CSS, and JavaScript. The game will include smooth controls, scoring, and a fun, interactive interface for endless gameplay enjoyment.</P>
+                        <a href="#" class="read">Code</a>
+                    </div>
+                    <div>
+                        <i class='bx bxs-face-mask' style='color:#2dd1cc'></i>
+                        <h2>Protfolio</h2>
+                        <P>I'm developing a personal portfolio using HTML, CSS, JavaScript, and React. It will showcase my projects, skills, and achievements with a sleek, interactive design to impress potential employers.</P>
+                        <a href="#" class="read">Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
